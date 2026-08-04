@@ -1,1 +1,1 @@
-const gamename = new String('Anup')
+// Object.freeze(user)
