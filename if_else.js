@@ -58,15 +58,32 @@ const temperatur = 61
 //    console.log("less than 1200");
 // }
 
-const userlogedin = true
-const debitcard = true
-const loggedinfromgoogle = false
-const loggedinemail = true
+// const userlogedin = true
+// const debitcard = true
+// const loggedinfromgoogle = false
+// const loggedinemail = true
 
-if(userlogedin && debitcard){
-    console.log("allow to buy course");
-}
+// if(userlogedin && debitcard){
+//     console.log("allow to buy course");
+// }
 
-if(loggedinfromgoogle || loggedinemail){
-    console.log("user logged in")
-}
+// if(loggedinfromgoogle || loggedinemail){
+//     console.log("user logged in")
+// }
+
+// NULLISH COALESCING Operator(??)
+
+// NULL , UNDEFINED;
+
+// let val1;
+// // val1 = 5 ?? 10
+// val1 = null ?? 10
+// console.log(val1)
+
+// TERNIARY OPERATOR;
+//SYNTAX--;
+//condition ? true : false;
+
+const age = 20
+age >= 18 ? console.log("they can vote") : console.log("they are not eligible")
+
