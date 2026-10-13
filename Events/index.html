@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Amazing images</h2>
+    <ul id="images">
+        <li><img  width = "200px"  id="photoshop" src="https://images.pexels.com/photos/27786309/pexels-photo-27786309.jpeg?cs=srgb&dl=pexels-yudha-dwiyoko-putra-1663958278-27786309.jpg&fm=jpg" alt="climate"></li>
+        
+        <li><img  width = "200px"  id="flowers" src="https://tse4.mm.bing.net/th/id/OIP.s1zJlyPO0ZXADUx9xAso0AHaE8?r=0&pid=ImgDet&w=474&h=316&rs=1&o=7&rm=3" alt=""></li>
+        
+
+        <li><img  width = "200px"  id="sunflower" src="https://tse1.mm.bing.net/th/id/OIP.wDRfmpwnZfD5GYMPYn1_4gHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></li>
+        
+
+        <li><img  width = "200px"  id="butterfly" src="https://images.pexels.com/photos/1212693/pexels-photo-1212693.jpeg?cs=srgb&dl=pexels-katie-burandt-1212693.jpg&fm=jpg" alt="climate"></li>
+        
+
+        <li><img  width = "200px"  id="monsoon" src="https://tse1.mm.bing.net/th/id/OIP.F6DW2KNdy-VRU7SsWNUVuwHaFY?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="climate"></li>
+
+        <li><a style="color: rgb(144, 38, 47);"  href="https://google.com" id="google">Google</a></li>
+        
+
+        
+
+    </ul>
+    
+</body>
+<script>
+    // document.getElementById('butterfly').onclick = function(){
+    //     alert("butterfly clicked")
+    // } 
+
+    // type , timestamp, defaultPrevented,
+    // target, toElement, SourceElement;
+    // clientX, clientY, Screex,ScreenY;
+    //altkey, ctrlkey, shiftKey, keycode;
+
+    //  document.getElementById('images').addEventListener('click', function(e){
+    //      console.log("clicked inside in ul");
+    //   }, false)
+
+    //   document.getElementById('butterfly').addEventListener('click', function(e){
+    //      console.log("butterfly clicked");
+    //      e.stopPropagation()
+    //   }, false)
+
+    //   document.getElementById('google').addEventListener('click', function(e){
+    //       e.preventDefault()
+    //     console.log("google clicked")
+
+    //   } ,false)
+
+     document.querySelector('#images').addEventListener('click', function(e){
+         console.log(e.target.tagName);
+         if(e.target.tagName == 'IMG'){
+            console.log(e.target.id)
+         }
+         let removeIt = e.target.parentNode
+         removeIt.remove()
+        //  removeIt.parentNode.removeChild()
+
+     } ,false)
+
+
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Helllo Anup</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+
+
+// isme ham set karte hain time to print the value after completing the time is called setTimeout;
+
+// setTimeout(function(){
+//     console.log("Anup kumar rai")
+
+// }, 2000)
+
+const sayanup = function(){
+    console.log("Anup kumar rai");
+}
+const changeText = function(){
+    document.querySelector('h1').
+    innerHTML = "Anup is coder"
+}
+
+ const changeme = setTimeout(changeText, 2000);
+
+// clearTimeout(changeme)
+
+// Event pe cleartimeout nikalna hai;
+
+document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(changeme)
+    console.log("STOPPED")
+})
+
+
+</script>
+</html>
